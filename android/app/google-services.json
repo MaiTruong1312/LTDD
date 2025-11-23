@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92598060179",
+    "project_id": "applamdep-ffa8e",
+    "storage_bucket": "applamdep-ffa8e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92598060179:android:f399fc7a0fd9fde79c7966",
+        "android_client_info": {
+          "package_name": "com.example.applamdep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92598060179-gqshb4pme2fodk5036qp92jqhuav0p13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCStDSAI_yc0qS_8VmGPMcm4RGAtfeq3tI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92598060179-gqshb4pme2fodk5036qp92jqhuav0p13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
