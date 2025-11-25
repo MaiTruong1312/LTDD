@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:applamdep/UI/Main/Home.dart'; // THÊM DÒNG NÀY
 import 'package:applamdep/UI/Login/forgot_password_screen.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -61,12 +62,13 @@ class _SignInScreenState extends State<SignInScreen> {
         email: email,
         password: password,
       );
-      // TODO: Điều hướng đến màn hình chính (HomeScreen) sau khi đăng nhập thành công
-      // if (mounted) {
-      //   Navigator.of(context).pushReplacement(
-      //     MaterialPageRoute(builder: (context) => const HomeScreen()),
-      //   );
-      // }
+      // SỬA: Điều hướng đến màn hình chính (HomeScreen) sau khi đăng nhập thành công
+      if (mounted) {
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const HomeScreen()),
+          (Route<dynamic> route) => false, // Xóa tất cả các route trước đó
+        );
+      }
     } on FirebaseAuthException catch (e) {
       String message = 'An error occurred. Please try again.';
       if (e.code == 'user-not-found' ||
